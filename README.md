@@ -1,4 +1,4 @@
-# sugang-sample
+![image](https://github.com/user-attachments/assets/c8a4ca08-c5c1-42ef-aef4-b1922e40d00f)# sugang-sample
 온라인 강의 수강신청 및 콘텐츠 관리 시스템 (KWeb 정회원 과제)
 
 # 프로젝트 사용 방법
@@ -135,20 +135,17 @@ const contentSchema = new mongoose.Schema({
 
 
 ### 4. API 명세
-
-POST	  /api/student/register     학생 회원가입  
-POST	  /api/student/login	      학생 로그인  
-  
-POST	  /api/teacher/register	    교수 회원가입  
-POST	  /api/teacher/login	      교수 로그인  
-  
-GET	    /api/teacher/course	      교수가 본인이 생성한 강좌 목록 조회  
-POST    /api/teacher/course	      교수가 새로운 강좌 등록  
-POST	  /api/content	            교수가 입력한 게시물 저장  
-  
-GET	    /api/student/my-course	  학생이 수강 신청한 강좌 조회  
-GET	    /api/student/course	      모든 강좌 목록 조회  
-POST	  /api/student/course	      학생이 수강 신청  
-GET	    /api/content	            학생이 게시물 조회  
-  
-DELETE  /api/reset	              데이터베이스의 모든 데이터 삭제 및 초기화 버튼  
+|요청 종류| api |설명|
+|------|---|---|
+|POST|	  /api/student/register  |   학생 회원가입  |
+|POST|	  /api/student/login	    |  학생 로그인  |
+|POST|	  /api/teacher/register	 |   교수 회원가입  |
+|POST|	  /api/teacher/login	    |  교수 로그인  |
+|GET|	    /api/teacher/course	    |  교수가 본인이 생성한 강좌 목록 조회  |
+|POST|    /api/teacher/course	    |  교수가 새로운 강좌 등록  |
+|POST|	  /api/content	          |  교수가 입력한 게시물 저장  |
+|GET|	    /api/student/my-course	 | 학생이 수강 신청한 강좌 조회  |
+|GET|	    /api/student/course	    |  모든 강좌 목록 조회  |
+|POST|	  /api/student/course	 |     학생이 수강 신청  |
+|GET|	    /api/content	          |  학생이 게시물 조회   |
+|POST|  /api/reset	             | 데이터베이스의 모든 데이터 삭제 및 기본 데이터 추가 |
