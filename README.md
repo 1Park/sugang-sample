@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c8a4ca08-c5c1-42ef-aef4-b1922e40d00f)# sugang-sample
+
 온라인 강의 수강신청 및 콘텐츠 관리 시스템 (KWeb 정회원 과제)
 
 # 프로젝트 사용 방법
