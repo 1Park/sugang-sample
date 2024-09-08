@@ -27,6 +27,12 @@ npm run build
 ```bash
 cd sugang-server
 mongod --dbpath ./mongodb
+```
+
+DB 서버 실행한 터미널 유지하고 새로운 터미널에서 백엔드서버를 실행합니다.  
+
+```bash
+cd sugang-server
 npm install
 node server.js  또는 npm run dev
 ```
