@@ -15,6 +15,10 @@
 - MongoDB: `C:\Program Files\MongoDB\Server\7.0\bin`
 - Node.js: `C:\Program Files\nodejs\`
 
+### 리포지토리 클론
+`git clone` 명령어를 통해 리포지토리를 로컬에 복사할 수 있습니다.  
+혹은 zip파일로 다운받아 실행해도 무방합니다.  
+
 ## 2. 클라이언트 페이지 빌드
 
 ```bash
