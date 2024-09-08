@@ -11,7 +11,7 @@
 - **Node.js**: [Node.js LTS 다운로드 페이지](https://nodejs.org/en/download/)에서 v20.9.0 LTS 버전을 다운로드
 
 ### 시스템 변수 설정
-설치된 경로를 시스템 변수에 등록해야 합니다. 일반적으로 다음 경로에 설치됩니다:
+설치된 경로를 시스템 변수에 등록해야 합니다. 일반적으로 다음 경로에 설치됩니다.
 - MongoDB: `C:\Program Files\MongoDB\Server\7.0\bin`
 - Node.js: `C:\Program Files\nodejs\`
 
@@ -40,7 +40,8 @@ node server.js  또는 npm run dev
 #
 ---
 
-# 웹 에플리케이션 구조
+# 웹 애플리케이션 리포트 (선택 과제)  
+
 
 ### 1-1. 도메인 모델링 및 DB 스키마 구조
    
@@ -67,7 +68,8 @@ Student 스키마
 const studentSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
-  password: { type: String, required: true }
+  password: { type: String, required: true }, // 암호화되어 저장됨
+  studentId: { type: Number, required: true }
 });
 ```
 Teacher 스키마
@@ -75,7 +77,9 @@ Teacher 스키마
 ```
 const teacherSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
-  name: { type: String, required: true }
+  name: { type: String, required: true },
+  password: { type: String, required: true }, // 암호화되어 저장됨
+  studentId: { type: Number, required: true }
 });
 ```
 
@@ -90,8 +94,9 @@ const courseSchema = new mongoose.Schema({
 Application 스키마
 ```
 const applicationSchema = new mongoose.Schema({
-  studentId: { type: String, required: true },
-  courseId: { type: mongoose.Schema.Types.ObjectId, ref: 'Course' }
+  id: { type: String, required: true },
+  courseName: { type: String, required: true },
+  teacherName: { type: String, required: true },
 });
 ```
 
