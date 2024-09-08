@@ -147,7 +147,8 @@ const contentSchema = new mongoose.Schema({
 토큰을 통해 접속 권한을 확인하고, 접속 권한 없을시 리다이렉트
 
 
-### 4. API 명세
+### 4. API 명세  
+api는 sugang-server/routes/apiRoutes.js에서 처리하고 있다.  
 |요청 종류| api |설명|
 |------|---|---|
 |POST|	  /api/student/register  |   학생 회원가입  |
